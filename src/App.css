@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  background-color: white;
+  justify-content: center;
+
+}
+
+nav img{
+  width: 18%;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 20px;
+}
+
