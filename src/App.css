@@ -54,12 +54,120 @@ nav{
 
 nav img{
   width: 18%;
+
+}
+
+nav ul{
 }
 
 nav ul li {
   display: inline-block;
   padding: 1em;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+
+}
+/* App.css */
+
+
+header {
+  padding-top: 110px;
+  background-color: #495e57;
 }
 
+header section {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Add space between the divs */
+  width: 57%;
+  margin: 0 auto; /* Center the section horizontally */
+  color: #edefee;
+  height: 480px;
+}
+
+header section div {
+  width: 50%; /* Each div takes up 50% of the width */
+}
+
+header section div:first-child {
+  margin-left: 44px; /* Bring the left div 20px to the right */
+}
+
+header section div:last-child {
+  margin-top: 1;
+  display: flex;
+  margin-top: 150px;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center; /* Center the image vertically */
+}
+
+header section div > p{
+  width: 60%; /* Each div takes up 50% of the width */
+  color:#000000;
+}
+/* 
+header section div {
+  width: calc(50% - 10px); 
+} */
+
+h2 {
+  color: #F4CE14;
+  font-size: 40pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+p {
+  font-size: 16pt;
+  max-width: 65ch;
+  line-height: 1.5;
+}
+
+button {
+  background-color: #F4CE14;
+  color: black;
+  padding: 20px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+header img {
+  width: 75%;
+  border-radius: 12pt;
+}
+
+footer section {
+
+  justify-items: center;
+  width:80%;
+    margin-left: 10%;
+  gap: 20px;
+  }
+
+
+footer {
+  padding: 20px;
+}
+
+footer img {
+  height:300px;
+}
+
+form {
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+}
+
+
+/* .main {
+  display: flex;
+  background-color: #495e57;
+  width: 100%;
+  height: 420px;
+  margin-top: 2em;
+} */

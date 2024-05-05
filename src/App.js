@@ -1,11 +1,15 @@
 import Nav from "./components/Nav";
-import './App.css';
+
 import React from "react";
+import Main from "./components/Main";
 
 function App() {
   return (
     <div>
+    <React.Fragment>
       <Nav />
+      <Main />
+    </React.Fragment>
     </div>
   );
 }
