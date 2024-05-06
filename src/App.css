@@ -39,128 +39,150 @@
 
 
 
-nav{
+/* Nav.css */
+
+nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 86px;
+  height: 10vh; /* 8% of the viewport height */
   display: flex;
   align-items: center;
+  justify-content: center; /* Add space between the logo and menu */
   z-index: 999;
   background-color: white;
-  justify-content: center;
-
 }
 
-nav img{
-  width: 18%;
 
+
+nav div:last-child {
+  /* width: 61vw; */
+  display: flex; /* Use flexbox for the last child */
+  
 }
 
-nav ul{
+
+
+
+nav div:first-child {
+  width: 16vw; /* Set width to 16% of the viewport width */
+ /* Center horizontally using margin */
+ 
+  
+}
+
+nav div:last-child {
+  justify-self: start; /* Align content to the end (right) horizontally */
+}
+
+nav img {
+  width: 100%;
+}
+
+nav ul {
 }
 
 nav ul li {
   display: inline-block;
-  padding: 1em;
+  padding: .5em;
   font-weight: bold;
-  font-size: 18px;
-
+  font-size: 1.5vw; /* 1.5% of the viewport width */
 }
+
+/* Footer.css */
+
+footer {
+  padding: 2vh; /* 2% of the viewport height */
+}
+
+footer section {
+  display: grid;
+  justify-items: center;
+  width: 80vw; /* 80% of the viewport width */
+  margin: 0 auto; /* Center the section horizontally */
+  gap: 2vw; /* 2% of the viewport width */
+}
+
+footer img {
+  height: 15vh; /* 15% of the viewport height */
+}
+
 /* App.css */
 
+main{
+  padding-top: 9vh;
+}
 
 header {
-  padding-top: 110px;
+  /* 15% of the viewport height */
   background-color: #495e57;
+  height: 52vh; /* 57% of the viewport height */
 }
 
 header section {
-  display: flex; /* Use flexbox */
-  justify-content: space-between; /* Add space between the divs */
-  width: 57%;
-  margin: 0 auto; /* Center the section horizontally */
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 0 auto;
   color: #edefee;
-  height: 480px;
 }
 
 header section div {
-  width: 50%; /* Each div takes up 50% of the width */
+  width: 50%;
 }
 
 header section div:first-child {
-  margin-left: 44px; /* Bring the left div 20px to the right */
+  margin-left: 3.5vw; /* 4% of the viewport width */
 }
 
 header section div:last-child {
-  margin-top: 1;
   display: flex;
-  margin-top: 150px;
-  justify-content: flex-end; /* Align content to the right */
-  align-items: center; /* Center the image vertically */
+  margin-top: 3vh; /* 3% of the viewport height */
+  justify-content: flex-end;
+  align-items: center;
 }
 
-header section div > p{
-  width: 60%; /* Each div takes up 50% of the width */
-  color:#000000;
+header section div > p {
+  width: 80%; /* 80% of the width */
+  color: #000000;
 }
-/* 
-header section div {
-  width: calc(50% - 10px); 
-} */
 
 h2 {
-  color: #F4CE14;
-  font-size: 40pt;
+  color: #f4ce14;
+  font-size: 3.5vw; /* 3.5% of the viewport width */
 }
 
 h3 {
-  font-size: 20pt;
+  font-size: 1.75vw; /* 1.75% of the viewport width */
 }
 
 p {
-  font-size: 16pt;
+  font-size: 1.1vw; /* 1.1% of the viewport width */
   max-width: 65ch;
   line-height: 1.5;
 }
 
 button {
-  background-color: #F4CE14;
+  background-color: #f4ce14;
   color: black;
-  padding: 20px;
+  padding: 2vw; /* 2% of the viewport width */
   border: none;
   text-decoration: none;
-  border-radius: 12px;
-  font-size: 16pt;
+  border-radius: 1vw; /* 1% of the viewport width */
+  font-size: 1.1vw; /* 1.1% of the viewport width */
   font-weight: bold;
 }
 
 header img {
-  width: 75%;
-  border-radius: 12pt;
-}
-
-footer section {
-
-  justify-items: center;
-  width:80%;
-    margin-left: 10%;
-  gap: 20px;
-  }
-
-
-footer {
-  padding: 20px;
-}
-
-footer img {
-  height:300px;
+  margin-top: 2vh;
+  width: 24vw; /* 32.5% of the viewport width */
+  border-radius: 2vw; /* 2% of the viewport width */
 }
 
 form {
   display: grid;
-  max-width: 200px;
-  gap: 20px;
+  max-width: 20vw; /* 20% of the viewport width */
+  gap: 2vw; /* 2% of the viewport width */
 }
 
 
