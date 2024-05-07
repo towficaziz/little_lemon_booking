@@ -116,7 +116,7 @@ main{
 header {
   /* 15% of the viewport height */
   background-color: #495e57;
-  height: 52vh; /* 57% of the viewport height */
+  height: 50vh; /* 57% of the viewport height */
 }
 
 header section {
@@ -133,6 +133,7 @@ header section div {
 
 header section div:first-child {
   margin-left: 3.5vw; /* 4% of the viewport width */
+  margin-top: 5vh;
 }
 
 header section div:last-child {
@@ -156,6 +157,14 @@ h3 {
   font-size: 1.75vw; /* 1.75% of the viewport width */
 }
 
+
+header section div > h2{
+  margin-bottom: 0px;
+}
+header section div > h3{
+  margin-top: 0px;
+}
+
 p {
   font-size: 1.1vw; /* 1.1% of the viewport width */
   max-width: 65ch;
@@ -165,7 +174,7 @@ p {
 button {
   background-color: #f4ce14;
   color: black;
-  padding: 2vw; /* 2% of the viewport width */
+  padding: 1vw; /* 1% of the viewport width */
   border: none;
   text-decoration: none;
   border-radius: 1vw; /* 1% of the viewport width */
@@ -174,15 +183,15 @@ button {
 }
 
 header img {
-  margin-top: 2vh;
+  margin-top: 4vh;
   width: 24vw; /* 32.5% of the viewport width */
   border-radius: 2vw; /* 2% of the viewport width */
 }
 
 form {
   display: grid;
-  max-width: 20vw; /* 20% of the viewport width */
-  gap: 2vw; /* 2% of the viewport width */
+  max-width: 40vw; /* 20% of the viewport width */
+  /* gap: 3vw; 2% of the viewport width */
 }
 
 

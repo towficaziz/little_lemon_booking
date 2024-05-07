@@ -1,0 +1,162 @@
+.bg {
+    
+    /* background-color:white;
+    
+    background-image: url('./../../images/reserve.png'); */
+    height: 20vh;
+    margin: 0 auto;
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+  }
+
+header section {
+    /* display: flex;
+    justify-content: space-between; */
+    /* width: 40vw; */
+   
+    
+    
+    /* background-repeat: no-repeat; */
+  }
+
+header{
+    background-color: #495e57;
+    
+}
+
+main>div{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+  
+
+  form {
+    display: grid;
+    grid-template-areas:
+      "date date"
+      "time time"
+      "guests occasion"
+      "button button";
+      display: flex;
+  flex-direction: column; /* Ensure the elements stack vertically */
+  align-items: center;
+  }
+  
+  /* Grid item styles */
+  label {
+    font-size: 1.2vw; /* Font size relative to viewport width */
+  }
+  
+  input,
+  select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for input fields */
+    font-size: 1.2vw; /* Font size relative to viewport width */
+  }
+  
+  #book-date {
+    grid-area: date; /* Assign grid area */
+  }
+  
+  #book-time {
+    grid-area: time; /* Assign grid area */
+  }
+  
+  #book-guests {
+    grid-area: guests; /* Assign grid area */
+  }
+  
+  #book-occasion {
+    grid-area: occasion; /* Assign grid area */
+  }
+  #book-date,#book-guests {
+  width: calc(100% - 24px); /* Subtract padding and adjust width */
+}
+form button{
+    align-items: center;
+    justify-content: center; 
+}
+  main> div button {
+    grid-area: button; /* Assign grid area */
+    cursor: pointer;
+    padding: 15px;
+    
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2vw; /* Font size relative to viewport width */
+    margin-top: 2vh;
+    display: flex;
+  justify-content: center;
+  }
+  
+  button:hover {
+    background-color: #EE9972;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    width: 10.4vw;
+  }
+
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  form div {
+    margin-bottom: 20px;
+  }
+
+button:disabled {
+    background-color: #ccc; /* Change to a grayish color when disabled */
+    cursor: not-allowed; /* Change cursor to indicate button is disabled */
+  }
+
+  button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #F4CE14;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+  }
+  
+div>main>section{
+  width: 64vw;
+  margin: 22vh 0vw 0vh 18.5vw;
+  display: flex;
+  justify-content: space-between; 
+
+}
+
+.fonts{
+  font-size: 2vw;
+  margin-top: 0vh;
+}
