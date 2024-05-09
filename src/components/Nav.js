@@ -1,15 +1,35 @@
 import React from "react";
 import logo from "../images/Logo.png";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Nav=() =>{
-    return(
-        <nav>
-            {/* <div> */}
-                <div>
-                    <img src={logo} alt="Little Lemon Logo" ></img>
-                </div>
-                <div>
+    const [activeItem, setActiveItem] = useState('HOME'); // Initialize active menu item
+
+    return (
+        <nav className="navigation">
+            <div>
+                <img src={logo} alt="Little Lemon Logo" />
+            </div>
+            <div className="menu">
                 <ul>
+                    <li><Link to="/" onClick={() => setActiveItem('HOME')} className={activeItem === 'HOME' ? 'active' : ''}>HOME</Link></li>
+                    <li><Link to="/about" onClick={() => setActiveItem('ABOUT')} className={activeItem === 'ABOUT' ? 'active' : ''}>ABOUT</Link></li>
+                    <li><Link to="/menu" onClick={() => setActiveItem('MENU')} className={activeItem === 'MENU' ? 'active' : ''}>MENU</Link></li>
+                    <li><Link to="/Booking" onClick={() => setActiveItem('RESERVATION')} className={activeItem === 'RESERVATION' ? 'active' : ''}>RESERVATION</Link></li>
+                    <li><Link to="/order-online" onClick={() => setActiveItem('ORDER ONLINE')} className={activeItem === 'ORDER ONLINE' ? 'active' : ''}>ORDER ONLINE</Link></li>
+                    <li><Link to="/login" onClick={() => setActiveItem('LOGIN')} className={activeItem === 'LOGIN' ? 'active' : ''}>LOGIN</Link></li>
+                </ul>
+            </div>
+        </nav>
+    );
+}
+
+
+export default Nav;
+
+
+                /* <ul>
                     <li><a>HOME</a></li>
                     <li><a>ABOUT</a></li>
                     <li><a>MENU</a></li>
@@ -17,11 +37,4 @@ const Nav=() =>{
                     <li><a>ORDER ONLINE</a></li>
                     <li><a>LOGIN</a></li>
 
-                </ul>
-                </div>
-            {/* </div> */}
-        </nav>
-    )
-}
-
-export default Nav;
+                </ul> */
