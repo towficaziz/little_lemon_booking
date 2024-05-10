@@ -4,6 +4,7 @@ import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import Nav from "./components/Nav";
 import Main from "./components/Main";
 import Special from './components/Special';
+import Showcase from './components/Showcase';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Nav />
         <Main />
         <SpecialRoute />
+        <ShowcaseRoute />
       </div>
     </Router>
   );
@@ -27,6 +29,18 @@ function SpecialRoute() {
 
   // Render <Special /> component for the root path
   return <Special />;
+}
+
+function ShowcaseRoute() {
+  const location = useLocation();
+  
+  // Check if the current location is not the root path
+  if (location.pathname !== '/') {
+    return null; // Don't render <Special /> component
+  }
+
+  // Render <Showcase /> component for the root path
+  return <Showcase />;
 }
 
 export default App;

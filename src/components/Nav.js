@@ -13,12 +13,12 @@ const Nav=() =>{
             </div>
             <div className="menu">
                 <ul>
-                    <li><Link to="/" onClick={() => setActiveItem('HOME')} className={activeItem === 'HOME' ? 'active' : ''}>HOME</Link></li>
-                    <li><Link to="/about" onClick={() => setActiveItem('ABOUT')} className={activeItem === 'ABOUT' ? 'active' : ''}>ABOUT</Link></li>
-                    <li><Link to="/menu" onClick={() => setActiveItem('MENU')} className={activeItem === 'MENU' ? 'active' : ''}>MENU</Link></li>
-                    <li><Link to="/Booking" onClick={() => setActiveItem('RESERVATION')} className={activeItem === 'RESERVATION' ? 'active' : ''}>RESERVATION</Link></li>
-                    <li><Link to="/order-online" onClick={() => setActiveItem('ORDER ONLINE')} className={activeItem === 'ORDER ONLINE' ? 'active' : ''}>ORDER ONLINE</Link></li>
-                    <li><Link to="/login" onClick={() => setActiveItem('LOGIN')} className={activeItem === 'LOGIN' ? 'active' : ''}>LOGIN</Link></li>
+                    <li><Link to="/" onClick={() => setActiveItem('HOME')} className={activeItem === 'HOME' ? 'active' : ''}>Home</Link></li>
+                    <li><Link to="/about" onClick={() => setActiveItem('ABOUT')} className={activeItem === 'ABOUT' ? 'active' : ''}>About</Link></li>
+                    <li><Link to="/menu" onClick={() => setActiveItem('MENU')} className={activeItem === 'MENU' ? 'active' : ''}>Menu</Link></li>
+                    <li><Link to="/Booking" onClick={() => setActiveItem('RESERVATION')} className={activeItem === 'RESERVATION' ? 'active' : ''}>Reservation</Link></li>
+                    <li><Link to="/order-online" onClick={() => setActiveItem('ORDER ONLINE')} className={activeItem === 'ORDER ONLINE' ? 'active' : ''}>Order Online</Link></li>
+                    <li><Link to="/login" onClick={() => setActiveItem('LOGIN')} className={activeItem === 'LOGIN' ? 'active' : ''}>Login</Link></li>
                 </ul>
             </div>
         </nav>

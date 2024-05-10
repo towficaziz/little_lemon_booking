@@ -160,3 +160,20 @@ div>main>section{
   font-size: 2vw;
   margin-top: 0vh;
 }
+
+.showmain{
+  padding-top: 6vh;
+}
+.showcase{
+  margin-top: 0vh;
+}
+
+.showcase img{
+  width: 20vw;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+
+.showcase p{
+  margin-right: 1.7vw;
+}

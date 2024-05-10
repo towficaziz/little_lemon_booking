@@ -37,8 +37,6 @@
   }
 }
 
-
-
 /* Nav.css */
 
 nav {
@@ -53,22 +51,14 @@ nav {
   background-color: white;
 }
 
-
-
 nav div:last-child {
   /* width: 61vw; */
   display: flex; /* Use flexbox for the last child */
-  
 }
-
-
-
 
 nav div:first-child {
   width: 16vw; /* Set width to 16% of the viewport width */
- /* Center horizontally using margin */
- 
-  
+  /* Center horizontally using margin */
 }
 
 nav div:last-child {
@@ -84,8 +74,8 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding: .5em;
-  font-weight: bold;
+  padding: 0.5em;
+  /* font-weight: bold; */
   font-size: 1.5vw; /* 1.5% of the viewport width */
 }
 
@@ -109,7 +99,7 @@ footer img {
 
 /* App.css */
 
-main{
+main {
   padding-top: 9vh;
 }
 
@@ -157,11 +147,10 @@ h3 {
   font-size: 1.75vw; /* 1.75% of the viewport width */
 }
 
-
-header section div > h2{
+header section div > h2 {
   margin-bottom: 0px;
 }
-header section div > h3{
+header section div > h3 {
   margin-top: 0px;
 }
 
@@ -194,7 +183,6 @@ form {
   /* gap: 3vw; 2% of the viewport width */
 }
 
-
 .menu ul li {
   list-style: none;
 }
@@ -209,9 +197,8 @@ form {
   color: white;
   background-color: #495e57;
   border-radius: 5px;
-  padding: 0 4px;
+  padding: 0 6px;
 }
-
 
 /* .main {
   display: flex;
