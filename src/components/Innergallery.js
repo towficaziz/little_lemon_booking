@@ -1,39 +1,39 @@
 import React from "react";
-import show1 from "../images/greek-salad1.jpg";
-import show2 from "../images/lemon-dessert1.jpg";
-import show3 from "../images/two.png";
+import show4 from "../images/pasta.png";
+import show5 from "../images/table.png";
+import show6 from "../images/fishbbq.png";
 import { useState, useEffect } from "react";
 import "./css/style.css";
 
-const Showcase = () => {
+const Innergallery = () => {
   // props is not required here
   return (
     <div>
       <main className="showmain">
-        <section className="showcase">
+        <section className="showcase showcaseupdate">
           {/* <h3 className="fonts">This weeks specials!</h3> */}
           <div>
-            <img src={show1} alt="Greek Salad" />
-            <h4>Greek Salad</h4>
+            <img src={show4} alt="Pasta" />
+            {/* <h4>Greek Salad</h4>
             <p>
               A healthy and refreshing mix of fresh vegetables, olives, and feta
               cheese, tossed in olive oil and herbs.
-            </p>
+            </p> */}
           </div>
           <div>
-            <img src={show2} alt="Lemon Dessert" />
-            <h4>Lemon Dessert</h4>
+            <img src={show5} alt="Inside of Restaurent" />
+            {/* <h4>Lemon Dessert</h4>
             <p>
               A delightful lemon-flavored dessert with a tangy twist, perfect
               for satisfying your sweet cravings.
-            </p>
+            </p> */}
           </div>
           <div>
-            <img src={show1} alt="Greek Salad" />
-            <h4>Greek Salad</h4>
+            <img src={show6} alt="Fish BBQ" />
+            {/* <h4>Greek Salad</h4>
             <p>
               Another view of our delicious Greek Salad, a customer favorite!
-            </p>
+            </p> */}
           </div>
         </section>
       </main>
@@ -41,4 +41,4 @@ const Showcase = () => {
   );
 };
 
-export default Showcase;
+export default Innergallery;

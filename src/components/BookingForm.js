@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./css/style.css";
+import Innergallery from "./Innergallery";
 
 
 
@@ -31,7 +32,7 @@ const BookingForm = (props) => {
 
   return (
     <>
-    
+    <>
     <header  className="bg">
       <h2>Please Reserve Your Table Here:</h2>
     </header>
@@ -68,7 +69,7 @@ const BookingForm = (props) => {
               <label htmlFor="book-guests">Number of Guests</label>
               <input id="book-guests" min="1" value={guests} onChange={(e) => {setGuests(e.target.value)}} type={"number"} placeholder={0} max={20} required></input>
             </div>
-            
+
             <div>
               <button className="button-container" style={{ cursor: 'pointer' }} aria-label="On Click"
                 type={"submit"}
@@ -80,6 +81,8 @@ const BookingForm = (props) => {
       </section>
       </div>
     </main>
+    </>
+    <Innergallery />
     </>
   );
 };

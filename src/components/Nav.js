@@ -16,7 +16,7 @@ const Nav=() =>{
                     <li><Link to="/" onClick={() => setActiveItem('HOME')} className={activeItem === 'HOME' ? 'active' : ''}>Home</Link></li>
                     <li><Link to="/about" onClick={() => setActiveItem('ABOUT')} className={activeItem === 'ABOUT' ? 'active' : ''}>About</Link></li>
                     <li><Link to="/menu" onClick={() => setActiveItem('MENU')} className={activeItem === 'MENU' ? 'active' : ''}>Menu</Link></li>
-                    <li><Link to="/Booking" onClick={() => setActiveItem('RESERVATION')} className={activeItem === 'RESERVATION' ? 'active' : ''}>Reservation</Link></li>
+                    <li><Link to="/booking" onClick={() => setActiveItem('RESERVATION')} className={activeItem === 'RESERVATION' ? 'active' : ''}>Reservation</Link></li>
                     <li><Link to="/order-online" onClick={() => setActiveItem('ORDER ONLINE')} className={activeItem === 'ORDER ONLINE' ? 'active' : ''}>Order Online</Link></li>
                     <li><Link to="/login" onClick={() => setActiveItem('LOGIN')} className={activeItem === 'LOGIN' ? 'active' : ''}>Login</Link></li>
                 </ul>

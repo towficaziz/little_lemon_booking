@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Main from "./components/Main";
 import Special from './components/Special';
 import Showcase from './components/Showcase';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Main />
         <SpecialRoute />
         <ShowcaseRoute />
+        <Footer />
       </div>
     </Router>
   );
